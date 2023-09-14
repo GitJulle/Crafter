@@ -42,3 +42,5 @@ function House() {
         houses += 1
         document.getElementById('wood counter').innerText = wood + " wood"
         document.getElementById('brick counter').innerText = bricks + " bricks"
+    }
+}
