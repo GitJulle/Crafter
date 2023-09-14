@@ -1,6 +1,7 @@
 var dirt = 0
 var bricks = 0
 var wood = 0
+var houses = 0
 
 
 function dirtadd() {
@@ -33,3 +34,11 @@ function giveAxe() {
         document.getElementById('AxeButton').remove()
     }
 }
+
+function House() {
+    if ((bricks >= 15) && (wood >= 30)) {
+        bricks -= 15
+        wood -= 30
+        houses += 1
+        document.getElementById('wood counter').innerText = wood + " wood"
+        document.getElementById('brick counter').innerText = bricks + " bricks"
